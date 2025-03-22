@@ -187,7 +187,12 @@ const settings = {
   ]
 };
 
-
+const handleClick = (url: string) => {
+  const newTab = window.open(url, "_blank", "noopener,noreferrer");
+  if (newTab) {
+    newTab.opener = null;
+  }
+};
 
 
   
@@ -204,9 +209,9 @@ const settings = {
     <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
       CareerBanao Bihar Student Credit Card Admission Program 2024
     </h1>
-    <h2 className="text-lg md:text-xl font-semibold text-purple-700">
+    <h1 className="text-lg md:text-xl font-semibold text-purple-700">
       DRCC Admission Counseling 2024
-    </h2>
+    </h1>
     <p className="text-gray-600 mt-3 text-sm md:text-base">
       The Bihar Student Credit Card Scheme provides financial support to students 
       for higher education. Apply now and continue your studies without financial barriers.
@@ -227,37 +232,38 @@ const settings = {
 
   {/* 🔹 Jab search term ho, tab grid dikhaye */}
   {searchTerm.length > 0 ? (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 px-4 mt-4">
-      {filteredColleges.length > 0 ? (
-        filteredColleges.map((college) => (
-          <div key={college.id} className="bg-white w-[300px] shadow-lg rounded-lg overflow-hidden p-4">
-            <div className="relative">
-              <img src={college.image} alt={`${college.name} Campus`} className="w-full h-40 object-cover" />
-              <img src={college.logo} alt={`${college.name} Logo`} className="absolute top-3 left-3 w-12 h-12 rounded-full border-2 border-white shadow-md" />
-            </div>
-            <h1 className="text-md font-semibold text-purple-700 mt-2">{college.name}</h1>
-            <p className="text-sm text-gray-600 flex items-center">
-              <FaMapMarkerAlt className="text-red-500 mr-2" /> {college.location}
-            </p>
-            <ul className="text-sm text-gray-600 space-y-1 mb-3">
-              {college.highlights.map((highlight, index) => (
-                <li key={index} className="flex items-center">
-                  <FaStar className="text-yellow-500 mr-2" />
-                  {highlight}
-                </li>
-              ))}
-            </ul>
-            <a href={college.link}>
-              <button className="bg-purple-700 hover:bg-pink-500 text-white py-2 px-4 rounded-lg text-sm font-medium w-full transition">
-                <FaAward className="inline-block mr-2" /> Apply now
-              </button>
-            </a>
+    <div className="w-full flex overflow-x-auto whitespace-nowrap space-x-4 p-4">
+    {filteredColleges.length > 0 ? (
+      filteredColleges.map((college) => (
+        <div key={college.id} className="bg-white min-w-[300px] shadow-lg rounded-lg overflow-hidden p-4">
+          <div className="relative">
+            <img src={college.image} alt={`${college.name} Campus`} className="w-full h-40 object-cover" />
+            <img src={college.logo} alt={`${college.name} Logo`} className="absolute top-3 left-3 w-12 h-12 rounded-full border-2 border-white shadow-md"/>
           </div>
-        ))
-      ) : (
-        <p className="text-center col-span-full text-gray-600">No colleges found.</p>
-      )}
-    </div>
+          <h1 className="text-md font-semibold text-purple-700 mt-2">{college.name}</h1>
+          <p className="text-sm text-gray-600 flex items-center">
+            <FaMapMarkerAlt className="text-red-500 mr-2" /> {college.location}
+          </p>
+          <ul className="text-sm text-gray-600 space-y-1 mb-3">
+            {college.highlights.map((highlight, index) => (
+              <li key={index} className="flex items-center">
+                <FaStar className="text-yellow-500 mr-2" />
+                {highlight}
+              </li>
+            ))}
+          </ul>
+          <a onClick={() => handleClick(college.link)}>
+            <button className="bg-purple-700 hover:bg-pink-500 text-white py-2 px-4 rounded-lg text-sm font-medium w-full transition">
+              <FaAward className="inline-block mr-2" /> Apply now
+            </button>
+          </a>
+        </div>
+      ))
+    ) : (
+      <p className="text-center col-span-full text-gray-600">No colleges found.</p>
+    )}
+  </div>
+  
   ) : (
     // 🔹 Jab search term empty ho, tab slider dikhaye
     <Slider {...settings} className="mx-4">
@@ -284,7 +290,7 @@ const settings = {
                   </li>
                 ))}
               </ul>
-              <a href={college.link}>
+              <a onClick={() => handleClick(college.link)}>
                 <button className="bg-purple-700 hover:bg-pink-500 text-white py-2 px-4 rounded-lg text-sm font-medium w-full transition">
                   <FaAward className="inline-block mr-2" /> Apply now
                 </button>

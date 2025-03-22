@@ -11,7 +11,7 @@ const Section = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h2 className="text-4xl font-bold text-purple-700 leading-tight">
+        <h2 className="text-4xl font-bold text-purple-700 leading-tight text-center">
           CareerBanao Bihar Student Credit Card Admission Program 2024
         </h2>
         <h3 className="text-2xl font-semibold text-pink-500">
