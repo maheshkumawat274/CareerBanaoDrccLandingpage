@@ -32,7 +32,7 @@ const TestimonialSlider = () => {
   return (
     <div className="max-w-5xl mx-auto pb-10 px-14 sm:px-4">
       <h1 className="text-center font-poppins mb-6 text-2xl sm:text-4xl font-bold text-purple-700">
-      UNIVERSITY RANKING
+      What our students have to say about us!
       </h1>
       <Slider {...settings}>
         {testimonials.map((item) => (
@@ -52,7 +52,6 @@ const TestimonialSlider = () => {
             
               <p className="text-white mt-4">{item.text}</p>
               <h1 className="text-md font-bold mt-2">{item.name}</h1>
-              <p className="text-sm text-white">Date</p>
             </div>
           </div>
         ))}

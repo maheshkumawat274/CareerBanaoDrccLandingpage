@@ -45,7 +45,7 @@ const Section3: React.FC<{ onApplyClick?: () => void }> = ({ onApplyClick = () =
   return (
     <section className="py-10 relative">
       <h1 className="text-center font-poppins mb-6 text-2xl sm:text-4xl font-bold text-purple-700">
-      UNIVERSITY RANKING
+      University Ranking
       </h1>
       <div className="container mx-auto px-4 sm:px-14 relative">
         <Slider {...sliderSettings}>

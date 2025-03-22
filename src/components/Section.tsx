@@ -12,10 +12,10 @@ const Section = () => {
         transition={{ duration: 0.8 }}
       >
         <h2 className="text-4xl font-bold text-purple-700 leading-tight text-center">
-          CareerBanao Bihar Student Credit Card Admission Program 2024
+          CareerBanao Bihar Student Credit Card Admission Counselling Program 2025
         </h2>
         <h3 className="text-2xl font-semibold text-pink-500">
-          DRCC ADMISSION COUNSELING 2024
+          BSCCS ADMISSION COUNSELING 2025
         </h3>
         <ul className="space-y-2 text-black text-lg">
           {["Registration", "Admission", "Bonafide Certificate Issue", "Apply to DRCC", "College Reporting"].map((item, index) => (
@@ -35,7 +35,7 @@ const Section = () => {
         transition={{ duration: 0.8 }}
       >
         <img 
-          src="./imgs/pexels-buro-millennial-636760-1438072.jpg" 
+          src="./imgs/drccpic.jpg" 
           alt="CareerBanao Image" 
           className="w-full md:w-[80%] h-full md:h-auto max-h-[400px] rounded-lg shadow-2xl object-contain"
         />

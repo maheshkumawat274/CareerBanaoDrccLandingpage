@@ -201,29 +201,32 @@ const handleClick = (url: string) => {
   {/* 🔹 Section Heading */}
   <h1 className="text-2xl sm:text-3xl font-bold text-center text-purple-700 mb-8 pt-14">
     <MdSchool className="inline-block text-primaryBtn text-5xl mr-2" />
-    DRCC APPROVED UNIVERSITY
+    BSCCS APPROVED UNIVERSITY
   </h1>
 
   {/* 🔹 Search Section */}
   <div className="text-center p-6">
     <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
-      CareerBanao Bihar Student Credit Card Admission Program 2024
+      CareerBanao Bihar Student Credit Card Admission Counselling Program 2025
+    </h1>
+    <h1 className="text-lg md:text-xl font-bold text-purple-700">
+      BSCCS Admission Counseling 2025
     </h1>
     <h1 className="text-lg md:text-xl font-semibold text-purple-700">
-      DRCC Admission Counseling 2024
+    "Dream Big, Study Smart!"
     </h1>
     <p className="text-gray-600 mt-3 text-sm md:text-base">
-      The Bihar Student Credit Card Scheme provides financial support to students 
-      for higher education. Apply now and continue your studies without financial barriers.
+    
+      Get up to ₹4 lakh for higher education with the Bihar Student Credit Card Scheme. Apply now!
     </p>
     <p className="text-gray-500 text-sm mt-2">
-      Enter your preferred <b>college name or location</b> to find admission details.
+      Enter your preferred <b>College Name or Location</b> to find admission details.
     </p>
 
     {/* 🔹 Search Input */}
     <input
       type="text"
-      placeholder="Search by college name or location..."
+      placeholder="Search by College name or Location..."
       value={searchTerm}
       onChange={(e) => setSearchTerm(e.target.value)}
       className="mt-4 p-2 w-full md:w-1/2 border rounded-md shadow-sm focus:ring focus:ring-purple-300"
