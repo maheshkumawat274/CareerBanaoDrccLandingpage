@@ -30,10 +30,13 @@ const TestimonialSlider = () => {
   };
 
   return (
+    <section className="py-10 relative">
+      <h1 className="text-center font-poppins mb-6 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-purple-700">
+      What Students Say About Us!
+    </h1>
+
     <div className="max-w-5xl mx-auto pb-10 px-14 sm:px-4">
-      <h1 className="text-center font-poppins mb-6 text-2xl sm:text-4xl font-bold text-purple-700">
-      What our students have to say about us!
-      </h1>
+      
       <Slider {...settings}>
         {testimonials.map((item) => (
           <div key={item.id} className="p-4 pt-14 pb-14">
@@ -57,6 +60,7 @@ const TestimonialSlider = () => {
         ))}
       </Slider>
     </div>
+    </section>
   );
 };
 

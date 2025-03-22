@@ -212,7 +212,7 @@ const handleClick = (url: string) => {
     <h1 className="text-lg md:text-xl font-bold text-purple-700">
       BSCCS Admission Counseling 2025
     </h1>
-    <h1 className="text-lg md:text-xl font-semibold text-purple-700">
+    <h1 className="text-lg md:text-xl font-semibold text-pink-500">
     "Dream Big, Study Smart!"
     </h1>
     <p className="text-gray-600 mt-3 text-sm md:text-base">

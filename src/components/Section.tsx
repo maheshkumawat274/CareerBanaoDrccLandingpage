@@ -11,12 +11,12 @@ const Section = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
       >
-        <h2 className="text-4xl font-bold text-purple-700 leading-tight text-center">
+        <h1 className=" text-2xl sm:text-4xl font-bold text-purple-700 leading-tight text-center">
           CareerBanao Bihar Student Credit Card Admission Counselling Program 2025
-        </h2>
-        <h3 className="text-2xl font-semibold text-pink-500">
+        </h1>
+        <h1 className="text-2xl font-semibold text-pink-500">
           BSCCS ADMISSION COUNSELING 2025
-        </h3>
+        </h1>
         <ul className="space-y-2 text-black text-lg">
           {["Registration", "Admission", "Bonafide Certificate Issue", "Apply to DRCC", "College Reporting"].map((item, index) => (
             <li key={index} className="flex items-center gap-2">
