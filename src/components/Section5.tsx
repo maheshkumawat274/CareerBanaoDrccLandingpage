@@ -51,7 +51,7 @@ const faqs: FAQItem[] = [
   },
   {
     question: "How can I contact CareerBanao for more information?",
-    answer: "You can reach out to us via phone or email. Email: cbsap@careerbanao.org | Phone: 8750092628."
+    answer: "You can reach out to us via phone or email. Email: info@careerbanao.org | Phone: 8750092628."
   }
 ];
 
