@@ -7,6 +7,7 @@ import TestimonialSlider from "./components/Section4"
 import ApplyBtn from "./components/Applybtn"
 import Loader from "./components/Loader"
 import Process from "./components/Section1"
+import FAQSection from "./components/Section5"
 
 
 const App = () => {
@@ -56,8 +57,13 @@ const App = () => {
           <Section3/>
           <div className="flex items-center justify-center overflow-hidden">
            <TestimonialSlider />
-           <ApplyBtn scrollToTarget={handleScrollToFirstComponent}/>
+           
           </div>
+          <div className="mb-14">
+            <FAQSection/>
+          </div>
+          <ApplyBtn scrollToTarget={handleScrollToFirstComponent}/>
+          
         </div>
       )}
     </>

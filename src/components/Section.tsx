@@ -16,7 +16,7 @@ const Section = () => {
         <h1 className="text-2xl font-semibold text-pink-500">
         BSCCS Scholarship Admission Program 2025
         </h1>
-        <p className="text-sm text-gray-700">CB-BSCCSAP 2025 (CareerBanao Bihar Student Credit Card Scholarship Admission Program 2025) simplifies the admission process for students in Bihar. It covers registration, admission, bonafide certificate issuance, DRCC application, and college reporting. The program ensures smooth navigation of formalities, making higher education more accessible through proper guidance and support</p>
+        <p className="text-sm text-gray-700">CB-BSCCSAP 2025 (CareerBanao Bihar Student Credit Card Scholarship Admission Program 2025) simplifies the admission process for students in Bihar. It covers Registration, Admission, Bonafide Certificate Issuance, DRCC Application, and College Reporting. The program ensures smooth navigation of formalities, making higher education more accessible through proper guidance and support</p>
         +
       </motion.div>
 
