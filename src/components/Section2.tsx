@@ -205,9 +205,9 @@ const handleClick = (url: string) => {
   </h1>
 
   {/* 🔹 Search Section */}
-  <div className="text-center p-6">
+  <div className="text-center p-2">
     <h1 className="text-2xl md:text-3xl font-bold text-gray-800 mb-2">
-      CareerBanao Bihar Student Credit Card Admission Counselling Program 2025
+    CareerBanao Bihar Student Credit Card Scholarship Admission Program 2025
     </h1>
     <h1 className="text-lg md:text-xl font-bold text-purple-700">
       BSCCS Admission Counseling 2025
